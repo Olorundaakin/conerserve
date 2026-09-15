@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers at CornerServe</title>
+<meta name="description" content="Interested in joining the CornerServe team? Learn about our mission and how to get in touch about future opportunities.">
+  <link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="cornerserve-navbar-icon-white.png" alt="CornerServe icon" class="logo-icon">
+      <span class="logo-text">CornerServe</span>
+      <svg class="logo-swoosh" width="120" height="10" viewBox="0 0 120 10">
+        <path d="M2,8 Q60,-4 118,4" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <button class="hamburger" id="hamburgerBtn">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      
+      <a href="app-download.html" class="signup-btn">Sign Up</a>
+    </nav>
+  </header>
+
+  <section class="careers-hero">
+    <h1>Join the CornerServe Team</h1>
+    <p>We're just getting started — help us build something that genuinely helps people.</p>
+  </section>
+
+  <section class="careers-content">
+
+    <div class="legal-block">
+      <h2>Why CornerServe?</h2>
+      <p>We're building a platform that solves a real, everyday problem — helping people find professionals they can actually trust. It's early days, which means there's real room to shape what CornerServe becomes.</p>
+    </div>
+
+    <div class="careers-status">
+      <div class="value-icon">🚧</div>
+      <h2>No Open Positions Yet</h2>
+      <p>CornerServe is currently in its early building stage, and we don't have open roles just yet. As we grow, we'll be looking for people who care about building trusted, useful products.</p>
+      <p>Interested in being considered when opportunities open up? Reach out and introduce yourself.</p>
+      <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    </div>
+
+  </section>
+
+  <script>
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburgerBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-open');
+      hamburgerBtn.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

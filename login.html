@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - CornerServe</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="cornerserve-navbar-icon-white.png" alt="CornerServe icon" class="logo-icon">
+      <span class="logo-text">CornerServe</span>
+      <svg class="logo-swoosh" width="120" height="10" viewBox="0 0 120 10">
+        <path d="M2,8 Q60,-4 118,4" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <button class="hamburger" id="hamburgerBtn">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#">Find a Service</a>
+      <a href="index.html#">Offer a Service</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+    </nav>
+  </header>
+
+  <section class="auth-section">
+    <div class="auth-card">
+      <h1>Welcome Back</h1>
+      <p class="auth-subtitle">Log in to continue to CornerServe.</p>
+
+      <form class="auth-form">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+
+        <p class="forgot-link"><a href="#">Forgot password?</a></p>
+
+        <button type="submit" class="btn btn-primary auth-btn">Log In</button>
+      </form>
+
+      <p class="auth-switch">Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+  </section>
+
+  <script>
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburgerBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-open');
+      hamburgerBtn.classList.toggle('active');
+    });
+    document.querySelector('.auth-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  window.location.href = 'index.html';
+});
+
+  </script>
+
+</body>
+</html>
+
+

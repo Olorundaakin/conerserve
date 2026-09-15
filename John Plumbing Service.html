@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Plumbing Services - CornerServe</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="cornerserve-navbar-icon-white.png" alt="CornerServe icon" class="logo-icon">
+      <span class="logo-text">CornerServe</span>
+      <svg class="logo-swoosh" width="120" height="10" viewBox="0 0 120 10">
+        <path d="M2,8 Q60,-4 118,4" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <button class="hamburger" id="hamburgerBtn">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="App-download.html" class="signup-btn">Sign Up</a>
+    </nav>
+  </header>
+
+  <section class="provider-header">
+    <div class="provider-avatar">🔧</div>
+    <h1>John Plumbing Services</h1>
+    <p class="provider-category-tag">Plumbing</p>
+    <p class="provider-meta">★ 4.8 (24 reviews) &nbsp;•&nbsp; 📍 Akure, Ondo State &nbsp;•&nbsp; ✅ Verified Provider</p>
+  </section>
+
+  <section class="provider-body">
+
+    <div class="provider-main">
+
+      <div class="provider-block">
+        <h2>About</h2>
+        <p>John Plumbing Services has been providing reliable plumbing solutions across Akure for over 8 years. From pipe repairs to full bathroom installations, John and his team are committed to quality workmanship and honest pricing.</p>
+      </div>
+
+      <div class="provider-block">
+        <h2>Services Offered</h2>
+        <ul class="service-list">
+          <li>Pipe repair &amp; installation</li>
+          <li>Leak detection</li>
+          <li>Bathroom &amp; kitchen plumbing</li>
+          <li>Water heater installation</li>
+          <li>Emergency plumbing (24/7)</li>
+        </ul>
+      </div>
+
+      <div class="provider-block">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+          <div class="portfolio-placeholder">📷</div>
+          <div class="portfolio-placeholder">📷</div>
+          <div class="portfolio-placeholder">📷</div>
+        </div>
+      </div>
+
+      <div class="provider-block">
+        <h2>Reviews</h2>
+        <div class="review-card">
+          <p class="review-stars">★★★★★</p>
+          <p class="review-text">"Fixed my kitchen leak same day. Professional and affordable."</p>
+          <p class="review-author">— Grace A.</p>
+        </div>
+        <div class="review-card">
+          <p class="review-stars">★★★★☆</p>
+          <p class="review-text">"Good work, arrived a little late but explained everything clearly."</p>
+          <p class="review-author">— Tunde O.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="provider-sidebar">
+      <div class="sidebar-card">
+        <p class="sidebar-price">From ₦10,000</p>
+        <p class="sidebar-label">Starting Price</p>
+
+        <p class="sidebar-availability">🟢 Available Today</p>
+
+        <a href="app-download.html" class="btn btn-primary sidebar-btn">Contact via App</a>
+        <p class="sidebar-note">Booking and messaging happen inside the CornerServe app.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <script>
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburgerBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-open');
+      hamburgerBtn.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

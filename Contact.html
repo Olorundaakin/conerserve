@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact CornerServe - We're Here to Help</title>
+<meta name="description" content="Have a question or need support? Reach out to the CornerServe team via email, phone, or our contact form.">
+  <link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="cornerserve-navbar-icon-white.png" alt="CornerServe icon" class="logo-icon">
+      <span class="logo-text">CornerServe</span>
+      <svg class="logo-swoosh" width="120" height="10" viewBox="0 0 120 10">
+        <path d="M2,8 Q60,-4 118,4" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <button class="hamburger" id="hamburgerBtn">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      
+      <a href="App-download.html" class="signup-btn">Sign Up</a>
+    </nav>
+  </header>
+
+  <section class="contact-hero">
+    <h1>Get in Touch</h1>
+    <p>Have a question or need help? We're here for you.</p>
+  </section>
+
+  <section class="contact-content">
+
+    <div class="contact-info">
+      <div class="contact-info-card">
+        <div class="value-icon">📧</div>
+        <h3>Email</h3>
+        <p>support@cornerserve.com</p>
+      </div>
+      <div class="contact-info-card">
+        <div class="value-icon">📞</div>
+        <h3>Phone</h3>
+        <p>+234 800 000 0000</p>
+      </div>
+      
+    </div>
+
+    <div class="contact-form-wrap">
+      <h2>Send Us a Message</h2>
+      <form class="auth-form contact-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="c-email">Email Address</label>
+        <input type="email" id="c-email" placeholder="Enter your email" required>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" placeholder="What is this about?" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+        <button type="submit" class="btn btn-primary auth-btn">Send Message</button>
+      </form>
+    </div>
+
+  </section>
+
+  <script>
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburgerBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-open');
+      hamburgerBtn.classList.toggle('active');
+    });
+
+    document.querySelector('.contact-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thanks for reaching out! We\'ll get back to you soon.');
+      e.target.reset();
+    });
+  </script>
+
+</body>
+</html>

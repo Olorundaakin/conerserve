@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs - CornerServe Help &amp; Support</title>
+<meta name="description" content="Get answers to common questions about how CornerServe works, provider verification, pricing, and getting started.">
+  <link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="cornerserve-navbar-icon-white.png" alt="CornerServe icon" class="logo-icon">
+      <span class="logo-text">CornerServe</span>
+      <svg class="logo-swoosh" width="120" height="10" viewBox="0 0 120 10">
+        <path d="M2,8 Q60,-4 118,4" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <button class="hamburger" id="hamburgerBtn">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      
+      <a href="App-download.html" class="signup-btn">Sign Up</a>
+    </nav>
+  </header>
+
+  <section class="faq-hero">
+    <h1>Frequently Asked Questions</h1>
+    <p>Everything you need to know about using CornerServe.</p>
+  </section>
+
+  <section class="faq-content">
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How does CornerServe work?
+        <span class="faq-toggle">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Search for a service, browse trusted providers near you, and contact them through the CornerServe app to request help. It's that simple.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Is CornerServe available in my city?
+        <span class="faq-toggle">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>CornerServe is currently launching in Akure, Ondo State, with plans to expand to more cities across Nigeria soon.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How are providers verified?
+        <span class="faq-toggle">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Every provider goes through a review process before they can list a service on CornerServe, helping ensure customers connect with trustworthy professionals.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Do I need to download the app to book a service?
+        <span class="faq-toggle">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Yes. Browsing providers and learning about CornerServe can be done here on the website, but booking, messaging, and payments happen inside the CornerServe app.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How much does it cost to use CornerServe?
+        <span class="faq-toggle">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Browsing and contacting providers is free for customers. Pricing for each service is set by individual providers and shown on their profile.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How do I become a provider on CornerServe?
+        <span class="faq-toggle">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Sign up and select "Offer a Service" as your role. You'll be guided through creating your provider profile once the app is available.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <script>
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburgerBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-open');
+      hamburgerBtn.classList.toggle('active');
+    });
+
+    const faqButtons = document.querySelectorAll('.faq-question');
+
+    faqButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.parentElement;
+        item.classList.toggle('faq-open');
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Guidelines - CornerServe</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="cornerserve-navbar-icon-white.png" alt="CornerServe icon" class="logo-icon">
+      <span class="logo-text">CornerServe</span>
+      <svg class="logo-swoosh" width="120" height="10" viewBox="0 0 120 10">
+        <path d="M2,8 Q60,-4 118,4" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <button class="hamburger" id="hamburgerBtn">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      
+      <a href="App-download.html" class="signup-btn">Sign Up</a>
+    </nav>
+  </header>
+
+  <section class="legal-hero">
+    <h1>Community Guidelines</h1>
+    <p>Building a trusted, respectful CornerServe community.</p>
+  </section>
+
+  <section class="legal-content">
+
+    <div class="legal-block">
+      <h2>Our Commitment</h2>
+      <p>CornerServe works because people trust each other. These guidelines exist to keep that trust strong — for customers looking for help, and for providers building their reputation.</p>
+    </div>
+
+    <div class="legal-block">
+      <h2>For Everyone</h2>
+      <ul class="legal-list">
+        <li>Be honest. Provide accurate information about yourself and your needs or services.</li>
+        <li>Be respectful. Treat every person you interact with on CornerServe with courtesy.</li>
+        <li>Communicate clearly. Misunderstandings often come from unclear expectations — be specific.</li>
+        <li>Report problems. If something feels wrong, let us know rather than handling it publicly or aggressively.</li>
+      </ul>
+    </div>
+
+    <div class="legal-block">
+      <h2>For Customers</h2>
+      <ul class="legal-list">
+        <li>Describe your service needs as clearly and accurately as possible.</li>
+        <li>Respect a provider's time — communicate promptly and show up for scheduled services.</li>
+        <li>Leave honest reviews based on your real experience.</li>
+        <li>Treat providers as professionals, not employees.</li>
+      </ul>
+    </div>
+
+    <div class="legal-block">
+      <h2>For Providers</h2>
+      <ul class="legal-list">
+        <li>Only list services you are genuinely qualified and equipped to provide.</li>
+        <li>Honor the pricing and availability shown on your profile.</li>
+        <li>Communicate promptly and professionally with customers.</li>
+        <li>Deliver the quality of work customers should reasonably expect.</li>
+      </ul>
+    </div>
+
+    <div class="legal-block">
+      <h2>What's Not Allowed</h2>
+      <ul class="legal-list">
+        <li>Harassment, threats, or abusive behavior toward any user</li>
+        <li>Discrimination based on race, religion, gender, ethnicity, or any other protected status</li>
+        <li>Fake reviews, fake profiles, or misrepresenting your identity</li>
+        <li>Attempting to take payments or communication outside the platform to avoid verification and accountability</li>
+        <li>Any illegal activity conducted through or facilitated by CornerServe</li>
+      </ul>
+    </div>
+
+    <div class="legal-block">
+      <h2>How We Handle Violations</h2>
+      <p>Reports of guideline violations are reviewed on a case-by-case basis. Depending on severity, this may result in a warning, temporary suspension, or permanent removal from CornerServe.</p>
+    </div>
+
+    <div class="legal-block">
+      <h2>Reporting a Concern</h2>
+      <p>If you experience or witness behavior that goes against these guidelines, please reach out through our <a href="contact.html">Contact page</a> so our team can look into it.</p>
+    </div>
+
+  </section>
+
+  <script>
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburgerBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-open');
+      hamburgerBtn.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

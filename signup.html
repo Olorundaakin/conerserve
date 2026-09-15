@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - CornerServe</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="cornerserve-navbar-icon-white.png" alt="CornerServe icon" class="logo-icon">
+      <span class="logo-text">CornerServe</span>
+      <svg class="logo-swoosh" width="120" height="10" viewBox="0 0 120 10">
+        <path d="M2,8 Q60,-4 118,4" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <button class="hamburger" id="hamburgerBtn">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#">Find a Service</a>
+      <a href="index.html#">Offer a Service</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+    </nav>
+  </header>
+
+  <section class="auth-section">
+    <div class="auth-card">
+      <h1>Create Your Account</h1>
+      <p class="auth-subtitle">Join CornerServe to find or offer trusted services.</p>
+
+      <form class="auth-form">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number</label>
+        <div class="phone-input">
+        <span class="phone-prefix">+234</span>
+        <input type="tel"id="phone" placeholder="Phone number" required>
+        </div>
+
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Create a password" required>
+
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" placeholder="Re-enter your password" required>
+
+        <label for="location">Location / State</label>
+<select id="location" required>
+  <option value="" disabled selected>Select your state</option>
+  <option value="ondo">Ondo</option>
+  <option value="osun">Osun</option>
+  <option value="lagos">Lagos</option>
+  <option value="oyo">Oyo</option>
+  <option value="ogun">Ogun</option>
+  <option value="ekiti">Ekiti</option>
+</select>
+
+        <label>What are you here to do?</label>
+        <div class="role-select">
+        <label class="role-option">
+        <input type="radio" name="role" value="customer" checked>
+        🔎 Find a Service
+        </label>
+        <label class="role-option">
+        <input type="radio" name="role" value="provider">
+        🛠️ Offer a Service
+        </label>
+        <label class="role-option">
+        <input type="radio" name="role" value="both">
+        Both
+        </label>
+        </div>
+
+        <label class="terms-option">
+        <input type="checkbox" required>
+        I agree to the <a href= terms-of-service.html>Terms of Service</a> and <a href= privacy-policy.html>Privacy Policy</a>
+        </label>
+
+        <button type="submit" class="btn btn-primary auth-btn">Create Account</button>
+      </form>
+
+      <p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+  </section>
+
+  <script>
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburgerBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-open');
+      hamburgerBtn.classList.toggle('active');
+    });
+
+    document.querySelector('.auth-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  window.location.href = 'index.html';
+});
+  </script>
+
+</body>
+</html>

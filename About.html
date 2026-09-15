@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About CornerServe - Trusted Local Services</title>
+<meta name="description" content="Learn how CornerServe connects customers with verified local service providers in Akure, Ondo State, and why trust and community come first.">
+  <link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="cornerserve-navbar-icon-white.png" alt="CornerServe icon" class="logo-icon">
+      <span class="logo-text">CornerServe</span>
+      <svg class="logo-swoosh" width="120" height="10" viewBox="0 0 120 10">
+        <path d="M2,8 Q60,-4 118,4" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <button class="hamburger" id="hamburgerBtn">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      
+      <a href="App-download.html" class="signup-btn">Sign Up</a>
+    </nav>
+  </header>
+
+  <section class="about-hero">
+    <h1>About CornerServe</h1>
+    <p>Trusted help, right in your corner.</p>
+  </section>
+
+  <section class="about-content">
+
+    <div class="about-block">
+      <h2>Our Mission</h2>
+      <p>CornerServe was built to solve a simple, everyday problem: finding someone reliable to help you — whether that's a plumber, an electrician, a cleaner, or a photographer — shouldn't depend on luck or a random recommendation. We connect people who need services with trusted, available professionals nearby, so help is never more than a search away.</p>
+    </div>
+
+    <div class="about-block">
+      <h2>Why We Started</h2>
+      <p>Too many people rely on word-of-mouth, social media posts, or a stranger's referral to find someone to fix a leaking pipe or clean their home. Providers, meanwhile, often struggle to reach new customers beyond their existing network. CornerServe brings both sides together in one trusted place — built around verification, transparency, and real reviews.</p>
+    </div>
+
+    <div class="about-block">
+      <h2>What Makes Us Different</h2>
+      <div class="about-values">
+        <div class="about-value-card">
+          <div class="value-icon">✓</div>
+          <h3>Verified Providers</h3>
+          <p>Every provider is reviewed before they can list a service.</p>
+        </div>
+        <div class="about-value-card">
+          <div class="value-icon">📍</div>
+          <h3>Local First</h3>
+          <p>We're starting right here in Akure, Ondo State — built for our community.</p>
+        </div>
+        <div class="about-value-card">
+          <div class="value-icon">⭐</div>
+          <h3>Real Reviews</h3>
+          <p>Ratings come only from customers who actually used the service.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-block about-cta">
+      <h2>Join Us From the Beginning</h2>
+      <p>Whether you're looking for a trusted professional or you're a service provider ready to grow your business, CornerServe is just getting started — and we'd love to have you with us.</p>
+      <div class="cta-buttons">
+        <a href="App-download.html" class="btn btn-primary">Sign Up</a>
+        <a href="index.html#" class="btn btn-secondary">Offer a Service</a>
+      </div>
+    </div>
+
+  </section>
+
+  <script>
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburgerBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-open');
+      hamburgerBtn.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

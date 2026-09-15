@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Services - Browse Every Category on CornerServe</title>
+<meta name="description" content="Explore every service category available on CornerServe, from home repairs to beauty, technology, events, and more.">
+  <link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="cornerserve-navbar-icon-white.png" alt="CornerServe icon" class="logo-icon">
+      <span class="logo-text">CornerServe</span>
+      <svg class="logo-swoosh" width="120" height="10" viewBox="0 0 120 10">
+        <path d="M2,8 Q60,-4 118,4" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <button class="hamburger" id="hamburgerBtn">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      
+      <a href="app-download.html" class="signup-btn">Sign Up</a>
+    </nav>
+  </header>
+
+  <section class="all-services-hero">
+    <h1>Explore All Services</h1>
+    <p>Browse every category CornerServe covers — find the right help for any need.</p>
+  </section>
+
+  <section class="all-services-content">
+
+    <div class="service-category-block">
+      <h2>🏠 Home Services</h2>
+      <div class="category-grid">
+        <div class="category-pill">Plumbing</div>
+        <div class="category-pill">Electrical</div>
+        <div class="category-pill">Cleaning</div>
+        <div class="category-pill">Carpentry</div>
+        <div class="category-pill">Painting</div>
+        <div class="category-pill">Pest Control</div>
+      </div>
+    </div>
+
+    <div class="service-category-block">
+      <h2>🔧 Repairs &amp; Maintenance</h2>
+      <div class="category-grid">
+        <div class="category-pill">Appliance Repair</div>
+        <div class="category-pill">Generator Repair</div>
+        <div class="category-pill">AC Repair &amp; Servicing</div>
+        <div class="category-pill">Furniture Repair</div>
+      </div>
+    </div>
+
+    <div class="service-category-block">
+      <h2>💻 Technology</h2>
+      <div class="category-grid">
+        <div class="category-pill">Web Development</div>
+        <div class="category-pill">Phone &amp; Computer Repair</div>
+        <div class="category-pill">CCTV Installation</div>
+        <div class="category-pill">IT Support</div>
+      </div>
+    </div>
+
+    <div class="service-category-block">
+      <h2>💅 Beauty &amp; Personal Care</h2>
+      <div class="category-grid">
+        <div class="category-pill">Hair Styling</div>
+        <div class="category-pill">Makeup Artist</div>
+        <div class="category-pill">Barbing</div>
+        <div class="category-pill">Spa &amp; Massage</div>
+      </div>
+    </div>
+
+    <div class="service-category-block">
+      <h2>💼 Business Services</h2>
+      <div class="category-grid">
+        <div class="category-pill">Graphic Design</div>
+        <div class="category-pill">Accounting</div>
+        <div class="category-pill">Legal Consulting</div>
+        <div class="category-pill">Business Consulting</div>
+      </div>
+    </div>
+
+    <div class="service-category-block">
+      <h2>🎉 Events</h2>
+      <div class="category-grid">
+        <div class="category-pill">Photography</div>
+        <div class="category-pill">Event Planning</div>
+        <div class="category-pill">Catering</div>
+        <div class="category-pill">DJ &amp; MC Services</div>
+        <div class="category-pill">Decoration</div>
+      </div>
+    </div>
+
+    <div class="service-category-block">
+      <h2>📚 Education</h2>
+      <div class="category-grid">
+        <div class="category-pill">Home Tutoring</div>
+        <div class="category-pill">Exam Prep</div>
+        <div class="category-pill">Language Lessons</div>
+      </div>
+    </div>
+
+    <div class="service-category-block">
+      <h2>🎨 Creative Services</h2>
+      <div class="category-grid">
+        <div class="category-pill">Tailoring</div>
+        <div class="category-pill">Graphic Design</div>
+        <div class="category-pill">Video Editing</div>
+        <div class="category-pill">Content Writing</div>
+      </div>
+    </div>
+
+    <div class="service-category-block">
+      <h2>🚗 Transportation</h2>
+      <div class="category-grid">
+        <div class="category-pill">Car Rental</div>
+        <div class="category-pill">Movers &amp; Logistics</div>
+        <div class="category-pill">Driving Services</div>
+      </div>
+    </div>
+
+    <div class="service-category-block">
+      <h2>💊 Health &amp; Wellness</h2>
+      <div class="category-grid">
+        <div class="category-pill">Home Nursing</div>
+        <div class="category-pill">Fitness Training</div>
+        <div class="category-pill">Nutrition Coaching</div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="final-cta">
+    <h2>Ready to Find Your Provider?</h2>
+    <p>Download the CornerServe app to search, connect, and book trusted professionals near you.</p>
+    <a href="app-download.html" class="btn btn-primary">Get the App</a>
+  </section>
+
+  <script>
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburgerBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-open');
+      hamburgerBtn.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
